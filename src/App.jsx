@@ -1,8 +1,9 @@
+import Gallery from "./Gallery"
 
 function App() {
   return (
     <div>
-      fdsff
+      <Gallery/>
     </div>
   )
 }
