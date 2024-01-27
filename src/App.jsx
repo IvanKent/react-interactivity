@@ -1,9 +1,9 @@
-import Gallery from "./Gallery"
+import GalleryTrial from "./GalleryTrial"
 
 function App() {
   return (
     <div>
-      <Gallery/>
+      <GalleryTrial/>
     </div>
   )
 }

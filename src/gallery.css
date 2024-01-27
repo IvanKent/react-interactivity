@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.imgContainer{
+    width: 200px;
+    height: 200px;
+}
+button{
+    width: auto;
+}
