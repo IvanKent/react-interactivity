@@ -4,6 +4,7 @@ import FormInput from './FormInput'
 import ScoreBoard from './ScoreBoard'
 import List from "./List"
 import ShapeEditor from "./ShapeEditor"
+import ShoppingCart from "./ShoppingCart"
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <FormInput/> */}
       {/* <ScoreBoard/> */}
       {/* <List/> */}
-      <ShapeEditor/>
+      {/* <ShapeEditor/> */}
+      <ShoppingCart/>
     </div>
   )
 }
