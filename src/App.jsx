@@ -5,6 +5,7 @@ import ScoreBoard from './ScoreBoard'
 import List from "./List"
 import ShapeEditor from "./ShapeEditor"
 import ShoppingCart from "./ShoppingCart"
+import TaskApp from './TaskApp'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <ScoreBoard/> */}
       {/* <List/> */}
       {/* <ShapeEditor/> */}
-      <ShoppingCart/>
+      {/* <ShoppingCart/> */}
+      <TaskApp/>
     </div>
   )
 }
