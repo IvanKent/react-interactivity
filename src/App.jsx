@@ -3,6 +3,7 @@ import Pointer from './Pointer'
 import FormInput from './FormInput'
 import ScoreBoard from './ScoreBoard'
 import List from "./List"
+import ShapeEditor from "./ShapeEditor"
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       {/* <Pointer/> */}
       {/* <FormInput/> */}
       {/* <ScoreBoard/> */}
-      <List/>
+      {/* <List/> */}
+      <ShapeEditor/>
     </div>
   )
 }
