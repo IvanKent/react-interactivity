@@ -2,6 +2,7 @@ import GalleryTrial from "./GalleryTrial"
 import Pointer from './Pointer'
 import FormInput from './FormInput'
 import ScoreBoard from './ScoreBoard'
+import List from "./List"
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       {/* <GalleryTrial/> */}
       {/* <Pointer/> */}
       {/* <FormInput/> */}
-      <ScoreBoard/>
+      {/* <ScoreBoard/> */}
+      <List/>
     </div>
   )
 }
