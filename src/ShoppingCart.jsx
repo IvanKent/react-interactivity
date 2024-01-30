@@ -21,18 +21,34 @@ export default function ShoppingCart() {
   ] = useState(initialProducts)
 
   function handleIncreaseClick(productId) {
-    setProducts(products.map(p => {
-        if(p.id === productId){
-            return {
-                ...p,
-                count: p.count+1
-            };
-        }else{
-            return p;
-        }
+    setProducts(products.map(product => {
+      if (product.id === productId) {
+        return {
+          ...product,
+          count: product.count + 1
+        };
+      } else {
+        return product;
+      }
     }))
   }
 
+  function handleDecreaseClick(productId){
+    let nextProducts = products.map(p => {
+      if(p.id === productId){
+        return {
+          ...p,
+          count: p.count-1
+        }
+      }else{
+        return p
+      }
+    })
+    nextProducts = nextProducts.filter(p => {
+      return p.count > 0;
+    })
+    setProducts(nextProducts)
+  }
   return (
     <ul>
       {products.map(product => (
@@ -44,6 +60,11 @@ export default function ShoppingCart() {
             handleIncreaseClick(product.id);
           }}>
             +
+          </button>
+          <button onClick={() => {
+          handleDecreaseClick(product.id);
+          }}>
+            –
           </button>
         </li>
       ))}
