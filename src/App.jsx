@@ -1,9 +1,11 @@
 import GalleryTrial from "./GalleryTrial"
+import Pointer from './Pointer'
 
 function App() {
   return (
     <div>
-      <GalleryTrial/>
+      {/* <GalleryTrial/> */}
+      <Pointer/>
     </div>
   )
 }
